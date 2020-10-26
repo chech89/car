@@ -3,9 +3,9 @@ package com.company;
 public class Car{
 
         private int wheels = 4;
-       private int horsePower;
-       private int seats = 4;
-       private String carName;
+        private int horsePower;
+        private int seats = 4;
+        private String carName;
 
         public Car(String carName, int horsePower){
             this.carName = carName;
@@ -21,16 +21,35 @@ public class Car{
             System.out.println("Machine " + carName + " turn off");
         }
 
-        public int getHorsePower(){
-            return horsePower;
-        }
+    public int getWheels() {
+        return wheels;
+    }
 
-        public String getCarName(){
-            return carName;
-        }
+    public int getHorsePower() {
+        return horsePower;
+    }
 
-        public void setHorsePower(int power){
-            this.horsePower = power;
-            System.out.println("Мощность " + carName + "изменена на: " + power);
-        }
+    public int getSeats() {
+        return seats;
+    }
+
+    public String getCarName() {
+        return carName;
+    }
+
+    public void setWheels(int wheels) {
+        this.wheels = wheels;
+    }
+
+    public void setHorsePower(int horsePower) {
+        this.horsePower = horsePower;
+    }
+
+    public void setSeats(int seats) {
+        this.seats = seats;
+    }
+
+    public void setCarName(String carName) {
+        this.carName = carName;
+    }
 }
